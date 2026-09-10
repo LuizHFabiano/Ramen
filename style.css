@@ -1,0 +1,609 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+    color: #3d3d3d;
+    padding-top: 60px;
+}
+
+header {
+    height: 60px;
+    width: 100%;
+    background-color: #b93225;
+    color: white;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    padding: 0 30px;
+}
+
+.logo {
+    width: 42px;
+    height: 42px;
+    display: block;
+    position: absolute;
+    left: 25px;
+    top: 9px;
+}
+
+.logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.nome-site {
+    margin-left: 55px;
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+nav {
+    position: absolute;
+    right: 30px;
+    top: 0;
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffd7a8;
+}
+
+#inicio {
+    width: 100%;
+    height: 500px;
+    position: relative;
+    background-image:
+        linear-gradient(
+            rgba(0, 0, 0, 0.18),
+            rgba(0, 0, 0, 0.18)
+        ),
+        url("assets/img/img4.jpg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.banner-texto {
+    background-color: rgba(0, 0, 0, 0.65);
+    color: white;
+    padding: 20px 40px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    max-width: 80%;
+    border-radius: 15px;
+}
+
+#beneficios {
+    background-color: #eeeeee;
+    text-align: center;
+    padding: 25px 20px 30px;
+}
+
+#beneficios h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.beneficios-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.beneficio {
+    width: 210px;
+    height: 100px;
+    background-color: #ffffff;
+    border: 1px solid #d8d8d8;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+}
+
+.beneficio:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.12);
+}
+
+.beneficio img {
+    width: 35px;
+    height: 35px;
+    object-fit: contain;
+    margin-bottom: 6px;
+}
+
+.beneficio h3 {
+    font-size: 13px;
+    font-weight: normal;
+    color: #555;
+}
+
+#sabores {
+    background-color: #fff4dd;
+    text-align: center;
+    padding: 25px 20px;
+}
+
+#sabores h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.sabores-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.sabor {
+    border: none;
+    border-radius: 25px;
+    background-color: #f1d49b;
+    color: #555;
+    padding: 10px 18px;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.sabor:hover {
+    background-color: #b93225;
+    color: white;
+    transform: scale(1.05);
+}
+
+#depoimentos {
+    background-color: #e9e9e9;
+    text-align: center;
+    padding: 30px 20px 25px;
+}
+
+#depoimentos h2 {
+    font-size: 22px;
+    margin-bottom: 12px;
+}
+
+.depoimento {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.depoimento img {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 12px;
+}
+
+.depoimento p {
+    font-size: 13px;
+    margin-bottom: 12px;
+}
+
+.botoes-depoimento {
+    display: flex;
+    justify-content: center;
+    gap: 6px;
+}
+
+.btn {
+    background-color: #b93225;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    padding: 7px 12px;
+    font-size: 11px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #8f241b;
+}
+
+#formulario {
+    border-top: 3px solid #b93225;
+    background-color: #f4f4f4;
+    padding: 30px 20px 35px;
+}
+
+#formulario h2 {
+    text-align: center;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+form {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+form input[type="text"],
+form input[type="tel"],
+form select {
+    width: 100%;
+    height: 38px;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: white;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    font-size: 13px;
+    color: #444;
+}
+
+form input::placeholder {
+    color: #999;
+}
+
+form input:focus,
+form select:focus {
+    outline: none;
+    border-color: #b93225;
+    box-shadow: 0 0 4px rgba(185, 50, 37, 0.25);
+}
+
+fieldset {
+    border: none;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+legend {
+    color: #a42f24;
+    font-size: 13px;
+    font-weight: bold;
+    margin-bottom: 7px;
+}
+
+.opcoes {
+    min-height: 38px;
+    background-color: white;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 8px;
+}
+
+.opcoes label {
+    font-size: 13px;
+    cursor: pointer;
+    color: #444;
+}
+
+.opcoes input {
+    cursor: pointer;
+}
+
+.enviar {
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-radius: 4px;
+    background-color: #299454;
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.enviar:hover {
+    background-color: #207641;
+    transform: scale(1.01);
+}
+
+footer {
+    width: 100%;
+    background-color: #292929;
+    color: #dddddd;
+    text-align: center;
+    padding: 20px 10px;
+}
+
+footer p:first-child {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.redes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+    margin-bottom: 10px;
+}
+
+.redes img {
+    width: 18px;
+    height: 18px;
+    object-fit: contain;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.redes img:hover {
+    transform: scale(1.2);
+}
+
+footer p:last-child {
+    font-size: 12px;
+}
+
+.agradecimento {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f4f4f4;
+    padding: 20px;
+}
+
+.caixa-agradecimento {
+    width: 100%;
+    max-width: 450px;
+    background-color: white;
+    text-align: center;
+    padding: 40px 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.caixa-agradecimento img {
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.caixa-agradecimento h1 {
+    color: #b93225;
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.caixa-agradecimento p {
+    color: #555;
+    font-size: 15px;
+    margin-bottom: 8px;
+}
+
+.voltar {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #b93225;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    font-size: 13px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.voltar:hover {
+    background-color: #8f241b;
+}
+
+@media (max-width: 700px) {
+
+    header {
+        height: 60px;
+        padding: 0;
+    }
+
+    .logo {
+        left: 15px;
+        top: 9px;
+        width: 40px;
+        height: 40px;
+    }
+
+    .nome-site {
+        margin-left: 65px;
+        font-size: 17px;
+    }
+
+    nav {
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 10px 5px;
+        background-color: #b93225;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 1001;
+    }
+
+    nav ul {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 10px;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav ul li {
+        text-align: center;
+    }
+
+    nav ul li a {
+        color: white;
+        font-size: 10px;
+        white-space: nowrap;
+    }
+
+    #inicio {
+        height: 350px;
+    }
+
+    .banner-texto {
+        font-size: 21px;
+        padding: 15px 20px;
+        max-width: 90%;
+        border-radius: 15px;
+    }
+
+    #beneficios {
+        padding: 20px 10px;
+    }
+
+    #beneficios h2 {
+        font-size: 18px;
+    }
+
+    .beneficios-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+        gap: 5px;
+    }
+
+    .beneficio {
+        width: 31%;
+        height: 85px;
+    }
+
+    .beneficio img {
+        width: 30px;
+        height: 30px;
+    }
+
+    .beneficio h3 {
+        font-size: 11px;
+    }
+
+    #sabores h2 {
+        font-size: 18px;
+    }
+
+    .sabor {
+        padding: 8px 12px;
+        font-size: 11px;
+    }
+
+    #depoimentos h2 {
+        font-size: 18px;
+    }
+
+    .depoimento img {
+        width: 55px;
+        height: 55px;
+    }
+
+    .depoimento p {
+        font-size: 11px;
+    }
+
+    #formulario h2 {
+        font-size: 18px;
+    }
+
+    form {
+        max-width: 100%;
+    }
+
+    form input[type="text"],
+    form input[type="tel"],
+    form select {
+        height: 38px;
+        font-size: 12px;
+    }
+
+    legend {
+        font-size: 12px;
+    }
+
+    .opcoes {
+        gap: 8px;
+    }
+
+    .opcoes label {
+        font-size: 11px;
+    }
+
+    .enviar {
+        height: 40px;
+        font-size: 12px;
+    }
+
+    footer {
+        padding: 15px 10px;
+    }
+
+    footer p:first-child {
+        font-size: 12px;
+    }
+
+    footer p:last-child {
+        font-size: 10px;
+    }
+
+    .redes img {
+        width: 16px;
+        height: 16px;
+    }
+}

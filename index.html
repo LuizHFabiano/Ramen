@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="style.css">
+
+    <script src="script.js" defer></script>
+
+    <title>Ichiraku Ramen</title>
+</head>
+
+<body>
+
+    <header>
+
+        <a href="#inicio" class="logo">
+            <img src="assets/img/Logo.png" alt="Logo Ichiraku Ramen">
+        </a>
+
+        <div class="nome-site">
+            Ichiraku Ramen
+        </div>
+
+        <nav>
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#beneficios">Benefícios</a></li>
+                <li><a href="#sabores">Sabores</a></li>
+                <li><a href="#depoimentos">Depoimentos</a></li>
+                <li><a href="#formulario">Peça já</a></li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <section id="inicio">
+
+        <div class="banner-texto">
+            O ramen que conquista seu coração!
+        </div>
+
+    </section>
+
+    <section id="beneficios">
+
+        <h2>Por que escolher nosso ramen?</h2>
+
+        <div class="beneficios-container">
+
+            <div class="beneficio">
+                <img src="assets/icons/ramen.png" alt="Ingredientes frescos">
+                <h3>Ingredientes frescos</h3>
+            </div>
+
+            <div class="beneficio">
+                <img src="assets/icons/fast-shipping.png" alt="Entrega rápida">
+                <h3>Entrega rápida</h3>
+            </div>
+
+            <div class="beneficio">
+                <img src="assets/icons/heart.png" alt="Sabor inigualável">
+                <h3>Sabor inigualável</h3>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="sabores">
+
+        <h2>Nossos Sabores</h2>
+
+        <div class="sabores-container">
+
+            <button class="sabor">Shoyu Ramen</button>
+            <button class="sabor">Tonkotsu Ramen</button>
+            <button class="sabor">Miso Ramen</button>
+            <button class="sabor">Frango Teriyaki</button>
+            <button class="sabor">Vegetariano</button>
+
+        </div>
+
+    </section>
+
+    <section id="depoimentos">
+
+        <h2>O que nossos clientes dizem</h2>
+
+        <div class="depoimento">
+
+        <img id="imagem-depoimento" src="assets/icons/Depoimento1.png" alt="Cliente">
+
+        <p id="texto-depoimento">
+        "O melhor ramen que já provei!" - Naruto Uzumaki
+        </p>
+
+        <div class="botoes-depoimento">
+        <button class="btn" id="anterior">Anterior</button>
+        <button class="btn" id="proximo">Próximo</button>
+    </div>
+
+</div>
+
+        </div>
+
+    </section>
+
+    <section id="formulario">
+
+        <h2>Peça já o seu ramen!</h2>
+
+        <form action="obrigado.html" method="get">
+
+            <input
+                type="text"
+                name="nome"
+                placeholder="Nome completo"
+                required
+            >
+
+            <input
+                type="tel"
+                name="telefone"
+                placeholder="Telefone"
+                required
+            >
+
+            <input
+                type="text"
+                name="endereco"
+                placeholder="Endereço de entrega"
+                required
+            >
+
+            <select name="sabor" required>
+                <option value="">Escolha o sabor</option>
+                <option>Shoyu Ramen</option>
+                <option>Miso Ramen</option>
+                <option>Tonkotsu Ramen</option>
+                <option>Frango Teriyaki</option>
+                <option>Vegetariano</option>
+            </select>
+
+            <fieldset>
+
+                <legend>Forma de pagamento:</legend>
+
+                <div class="opcoes">
+
+                    <label>
+                        <input
+                            type="radio"
+                            name="pagamento"
+                            value="Dinheiro"
+                            required
+                        >
+                        Dinheiro
+                    </label>
+
+                    <label>
+                        <input
+                            type="radio"
+                            name="pagamento"
+                            value="Cartão"
+                        >
+                        Cartão
+                    </label>
+
+                    <label>
+                        <input
+                            type="radio"
+                            name="pagamento"
+                            value="PIX"
+                        >
+                        PIX
+                    </label>
+
+                </div>
+
+            </fieldset>
+
+            <fieldset>
+
+                <legend>Adicionais:</legend>
+
+                <div class="opcoes">
+
+                    <label>
+                        <input
+                            type="checkbox"
+                            name="adicionais"
+                            value="Ovo"
+                        >
+                        Ovo
+                    </label>
+
+                    <label>
+                        <input
+                            type="checkbox"
+                            name="adicionais"
+                            value="Bacon"
+                        >
+                        Bacon
+                    </label>
+
+                    <label>
+                        <input
+                            type="checkbox"
+                            name="adicionais"
+                            value="Extra macarrão"
+                        >
+                        Extra macarrão
+                    </label>
+
+                </div>
+
+            </fieldset>
+
+            <button type="submit" class="enviar">
+                Enviar Pedido
+            </button>
+
+        </form>
+
+    </section>
+
+    <footer>
+
+        <p><strong>Ramen Kami</strong></p>
+
+        <div class="redes">
+
+            <img src="assets/icons/facebook.png" alt="Facebook">
+
+            <img src="assets/icons/instagram.png" alt="Instagram">
+
+            <img src="assets/icons/whatsapp.png" alt="WhatsApp">
+
+        </div>
+
+        <p>
+            © 2026 Ichiraku Ramen — Todos os direitos reservados.
+        </p>
+
+    </footer>
+
+</body>
+</html>
